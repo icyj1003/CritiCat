@@ -1,3 +1,20 @@
+<!-- PROJECT LOGO -->
+<br />
+<div align="left">
+  <div style="display: flex;flex-direction: row;align-items:top;">
+    <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="./extension/icons/icon32.png" alt="Logo">
+  </a>
+  <span align="left" style="font-size:20px;font-weight:bold">CritiCat</span>
+
+  </div>
+
+  
+  <p align="left">
+    CritiCat is the purr-fect tool for anyone who wants to stay informed and avoid fake news on Facebook. With its powerful machine learning algorithms, CritiCat predicts the credibility of Facebook posts in real-time, allowing you to quickly determine which posts are trustworthy and which ones to avoid. Whether you're a concerned citizen looking to stay informed or a researcher looking for accurate data, CritiCat is the ideal companion for you. With CritiCat, you can effortlessly collect and rate Facebook posts with their credibility, helping you stay up-to-date and make informed decisions in real-time. So why wait? Download CritiCat now and start protecting yourself from fake news today!
+  </p>
+</div>
+
 # Hướng dẫn cài đặt
 
 ## Cài đặt CritiCat
