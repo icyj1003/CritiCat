@@ -1,0 +1,42 @@
+version: "3"
+
+name: bigcat
+
+services:
+  mongo:
+    image: mongo
+    container_name: database
+    ports:
+      - "27017:27017"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 128M
+        reservations:
+          cpus: "0.05"
+          memory: 64M
+    healthcheck:
+      test: ["CMD", "mongosh"]
+      interval: 1m30s
+      timeout: 30s
+      retries: 5
+      start_period: 30s
+
+  criticat:
+    build: server
+    container_name: server
+    ports:
+      - "8001:8001"
+      - "8002:8002"
+    command: sh entrypoint.sh
+    deploy:
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 128M
+        reservations:
+          cpus: "0.05"
+          memory: 64M
+    depends_on:
+      - mongo
