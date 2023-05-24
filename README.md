@@ -27,7 +27,7 @@
     ![chạy facebook](./images/facebook_start.png "chạy facebook").
 4. Sau khi cài CritiCat và khởi động Facebook sẽ có giao diện như hình dưới.
 
-    ![cài đặt thành công facebook](./images/ok.png "cài đặt thành công facebook").
+    ![cài đặt thành công facebook](./images/ok.png "cài đặt thành công facebook")
 
 # Hướng dẫn gán nhãn
 Bài viết được đánh giá là “reliable” khi đạt các tiêu chí sau:
