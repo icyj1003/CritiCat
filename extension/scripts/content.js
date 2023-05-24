@@ -116,16 +116,13 @@ function handleArcticle(article) {
             "data": articleScraper(article),
             "label": 0
         }
-        try {
+        if (ws.readyState == ws.OPEN) {
             ws.send(JSON.stringify(data))
             article.style.backgroundColor = "#b3ffb3"
             labelElement.innerHTML = "<h4>✅This article is marked as reliable</h4>";
+        } else {
+            alert("Websocket not found! Liên hệ Khôi!");
         }
-        catch (err) {
-            alert("Websocket not found");
-        };
-
-
     });
 
     // Add click event listener to the second button
@@ -135,15 +132,13 @@ function handleArcticle(article) {
             "data": articleScraper(article),
             "label": 1
         }
-        try {
+        if (ws.readyState == ws.OPEN) {
             ws.send(JSON.stringify(data))
             article.style.backgroundColor = "#ffcccc"
             labelElement.innerHTML = "<h4>❌This article is marked as unreliable</h4>";
+        } else {
+            alert("Websocket not found! Liên hệ Khôi!");
         }
-        catch (err) {
-            alert("Websocket not found");
-        };
-
     });
 
     article.appendChild(labelElement);
