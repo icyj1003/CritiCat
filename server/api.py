@@ -6,7 +6,7 @@ from fastapi import FastAPI
 from pymongo import MongoClient
 
 # SETTINGS
-MONGO_CONNECT_STRING = "mongodb://mongo:27017"
+MONGO_CONNECT_STRING = "mongodb+srv://noticy:76BZJDtw6KtzZn1W@cluster0.mlaq4tt.mongodb.net/?retryWrites=true&w=majority"
 
 
 app = FastAPI()

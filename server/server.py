@@ -6,7 +6,7 @@ import websockets
 from pymongo import MongoClient
 
 # SETTINGS
-MONGO_CONNECT_STRING = "mongodb://mongo:27017/"
+MONGO_CONNECT_STRING = "mongodb+srv://noticy:76BZJDtw6KtzZn1W@cluster0.mlaq4tt.mongodb.net/?retryWrites=true&w=majority"
 DEFAULT_PORT = 8001
 
 
@@ -20,7 +20,7 @@ class Server:
 
     async def send(self, websocket, client_id: str):
         try:
-            # TODO: replace with the Kafka consumer: list listen to label ->
+            # TODO: replace with the Kafka consumer: listen to label ->
             while True:
                 # send dummy message
                 await websocket.send("ping")

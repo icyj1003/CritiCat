@@ -2,3 +2,5 @@ database
 preprocess
 /*.bak
 /*.pem
+dataset
+server

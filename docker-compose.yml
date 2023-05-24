@@ -3,25 +3,25 @@ version: "3"
 name: bigcat
 
 services:
-  mongo:
-    image: mongo
-    container_name: database
-    ports:
-      - "27017:27017"
-    deploy:
-      resources:
-        limits:
-          cpus: "0.1"
-          memory: 128M
-        reservations:
-          cpus: "0.05"
-          memory: 64M
-    healthcheck:
-      test: ["CMD", "mongosh"]
-      interval: 1m30s
-      timeout: 30s
-      retries: 5
-      start_period: 30s
+  # mongo:
+  #   image: mongo
+  #   container_name: database
+  #   ports:
+  #     - "27017:27017"
+  #   deploy:
+  #     resources:
+  #       limits:
+  #         cpus: "0.1"
+  #         memory: 128M
+  #       reservations:
+  #         cpus: "0.05"
+  #         memory: 64M
+  #   healthcheck:
+  #     test: ["CMD", "mongosh"]
+  #     interval: 1m30s
+  #     timeout: 30s
+  #     retries: 5
+  #     start_period: 30s
 
   criticat:
     build: server
@@ -38,5 +38,3 @@ services:
         reservations:
           cpus: "0.05"
           memory: 64M
-    depends_on:
-      - mongo
