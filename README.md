@@ -1,9 +1,7 @@
 # Hướng dẫn cài đặt
 
 # Hướng dẫn gán nhãn
-
 Bài viết được đánh giá là “reliable” khi đạt các tiêu chí sau:
-
 - Bài viết từ nguồn tin đáng tin cậy (thông tin chính phủ, tin tức vtv, đại học quốc gia,..)
 - Bài viết dựa trên các sự thật hiển nhiên (chiều nay mưa, )
 - Không mang tính tính chất gây nhầm lẫn hoặc sai lệch thông tin.
