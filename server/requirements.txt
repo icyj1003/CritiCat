@@ -1,6 +1,0 @@
-websockets
-pymongo
-kafka-python
-fastapi
-uvicorn
-openssl-python
